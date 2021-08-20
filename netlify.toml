@@ -1,0 +1,9 @@
+[build]
+functions = './functions'
+
+#short the url instead of using '/.netlify/functions/functionName'
+# now we can use '/api/functionName/'
+[[redirects]]
+from = '/api/*'
+status = 200
+to = '/.netlify/functions/:splat'
