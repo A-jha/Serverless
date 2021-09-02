@@ -70,4 +70,32 @@ const items = [{ name: "Avinash" }, { name: "Arpta" }];
 - this case Our array will be converted into json data and shown in the bowser
 - if you have json viewer in browser than you can see that
 
-## 3.
+## 3. Deploy the app
+
+Deploy the application to netlify and use github repo so that for a change in the repo netlify wii start build .
+
+## 4 . Access different apps to use our API
+
+Setup headers
+
+```js
+ headers: {
+      "Access-Control-Allow-Origin": "*",
+    },
+```
+
+- basically this will allow all to fetch data
+
+## 5. Setting Up AirTable Headless CMS
+
+Airtable is a relational database tool that's also an online collaboration tool. Before you brush it off as boring because of the word database, know that Airtable is easy to use and extremely versatile. You can use it to manage work, track and organize inventories, plan an event, and [much more](https://airtable.com/).
+
+- It has a generous free tear
+
+- Airtable exposes our API key in not a good way so it is our duty to secure our API key.
+
+## 6. [airtable-node](https://www.npmjs.com/package/airtable-node)
+
+Node wrapper for Airtable API
+
+-
